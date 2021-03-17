@@ -37,17 +37,18 @@ This section explains the principles behind this README file.  If this repositor
 
 ### This application will perform the curd operations.
 
-1. Create Operation: This Api will save the data of a person
-URL: http://<host>:<port>/person
-Method: POST
-Content-Type: application/json
-RequestBody: {
+1. Create Operation: This Api will save the data of a person 
+URL: http://locathost:8080/person
+Method: POST 
+Content-Type: application/json 
+<b>RequestBody</b>: 
+{
 	
 	"firstName": "Virat",
 	"surname": "Kholi"
 }
 
-Response: 
+<b>Response</b>: 
 {
     "person": {
         "id": 1,
@@ -57,15 +58,15 @@ Response:
 }
 
 2. Update Operation: This Api will modify the existing resource
-URL: http://<host>:<port>/person/{id}
+URL: http://locathost:8080/person/{id}
 Method: PUT
-RequestBody: {
+<b>RequestBody</b>: {
 	
 	"firstName": "Rohit",
 	"surname": "Sharma"
 }
 
-Response: 
+<b>Response</b>: 
 {
     "person": {
         "id": 1,
@@ -75,9 +76,9 @@ Response:
 }
 
 3. Get Operation: This Api will return the available persons list
-URL: http://<host>:<port>/person
+URL: http://locathost:8080/person
 Method: GET
-Response:
+<b>Response</b>:
 {
     "persons": [
         {
@@ -89,17 +90,17 @@ Response:
 }
 
 4. Count Operation: Get the counts of records
-URL: http://<host>:<port>/person/count
+URL: http://locathost:8080/person/count
 Method: GET
-Response:
+<b>Response</b>:
 {
     "count": 1
 }
 
 5. Delete Operation: This Api will delete a person from the system
-URL: http://<host>:<port>/person/{id}
+URL: http://locathost:8080/person/{id}
 Method: DELETE
-Response:
+<b>Response</b>:
 No content with 204 status code
 
 
